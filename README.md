@@ -1,2 +1,8 @@
-# food-recipes-fe
-Code Academy Feb 2023 - Mini Project
+# mck-mini-project-fe
+
+1. local \
+$ yarn install \
+$ yarn dev 
+
+2. docker \
+$ docker compose up --build 

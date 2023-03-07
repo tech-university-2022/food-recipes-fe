@@ -1,0 +1,12 @@
+#main-layout {
+    width: min-content;
+    min-width: max-content;
+    min-height: calc(95vh - 1rem);
+    position: absolute;
+    left: 0;
+    top: calc(5vh + 1rem);
+}
+
+#main-layout > .content {
+    padding-bottom: 12rem;
+}

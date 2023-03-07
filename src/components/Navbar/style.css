@@ -1,0 +1,52 @@
+#navbar {
+    /* size */
+    width: 100vw;
+    height: 5vh;
+    /* color */
+    background-color: white;
+    /* display-flex */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* position */
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* others */
+    padding: 0.5rem 1rem;
+    box-shadow: 0 0.1rem 1rem gainsboro;
+    z-index: 2;
+}
+  
+.navbar-item {
+    position: relative;
+    text-align: center;
+}
+
+.navbar-title {
+    font-weight: 600;
+}
+
+.navbar-title:hover {
+    font-weight: 700;
+}
+
+.menu {
+    position: absolute;
+    margin-top: 1rem;
+    width: 7rem;
+    padding: 0.25rem 0.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 1rem gainsboro;
+}
+
+.menu > .item {
+    border-radius: 0.4rem;
+    padding: 0 0.25rem;
+}
+
+.menu > .item:hover {
+    background-color: var(--quinary-color);
+    font-weight: 700;
+}

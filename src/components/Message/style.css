@@ -1,0 +1,10 @@
+.message {
+    display: flex;
+    gap: 1rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    position: absolute;
+    top: 1rem;
+    height: 2rem;
+    width: fit-content;
+}
