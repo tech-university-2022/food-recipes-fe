@@ -1,19 +1,34 @@
 import MainLayout from "../../layouts/MainLayout"
-import React, { memo, useCallback, useState } from "react"
+import React, { memo, useCallback, useEffect, useState } from "react"
 import "./style.css"
 import Pagination from "../../components/Pagination"
 import useMessage from "../../hooks/message"
+import AuthService from "../../services/auth.service"
+import useAuth from "../../hooks/auth"
 
 const Content = () => {
     const [page, setPage] = useState(0);
     const { message } = useMessage();
 
-    const handleMessage = useCallback(() => {
+    const { setAuth } = useAuth()
+
+    useEffect(() => {
+        
+    })
+
+    const handleMessage = useCallback(async () => {
         message.open({
             type: "success",
             content: "This is the message",
             duration: 3
         })
+
+        console.log(page)
+
+        const response = await AuthService.login({
+
+        })
+        setAuth(response.token)
     }, [])
 
     return (
