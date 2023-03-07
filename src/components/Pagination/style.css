@@ -1,0 +1,25 @@
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+    margin: 1rem 0;
+}
+
+#pagination > button {
+    font-family: 'Tilt Neon', cursive;
+    color: var(--quinary-color);
+    background-color: var(--secondary-color);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 0;
+}
+
+#pagination > button:hover, 
+#pagination > .chosen-page-btn {
+    background-color: var(--primary-color);
+}
+
+#pagination > button:disabled {
+    background-color: var(--tertiary-color);
+}
