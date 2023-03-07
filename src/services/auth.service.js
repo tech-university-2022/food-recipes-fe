@@ -1,4 +1,4 @@
-import Fetch from "@frontend/services/fetch/index.js";
+import Fetch from "./fetch/index";
 
 export default class AuthService {
     static register = async ({ ...params }) => {

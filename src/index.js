@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Router from './router'
 
 import './styles/index.css'
+import './styles/antd-customize.css'
 
 const App = () => {
   return (
