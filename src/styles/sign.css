@@ -25,7 +25,7 @@
     margin: auto;
 }
 
-#sign > .left {
+#sign>.left {
     width: 100%;
     overflow: hidden;
     border-radius: 1rem;
@@ -33,7 +33,7 @@
     align-items: center;
 }
 
-#sign > .right {
+#sign>.right {
     position: relative;
     box-sizing: border-box;
     text-align: center;
@@ -41,13 +41,13 @@
     width: 100%;
 }
 
-#sign > .right > .title {
+#sign .right .title {
     font-weight: 700;
     font-size: 2.5rem;
     color: var(--primary-color);
 }
 
-#sign .ask > .link {
+#sign .ask>.link {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 600;
@@ -105,7 +105,7 @@
         overflow-x: visible;
     }
 
-    #sign > .right {
+    #sign>.right {
         margin-bottom: 2rem;
     }
 
@@ -129,8 +129,8 @@
         grid-template-columns: auto;
     }
 
-    #sign > .left {
-      display: none;
+    #sign>.left {
+        display: none;
     }
 }
 
@@ -141,17 +141,18 @@
 }
 
 @media only screen and (max-width: 300px) {
-    #sign, #sign input, #sign .sign-btn {
+
+    #sign,
+    #sign input,
+    #sign .sign-btn {
         font-size: 0.8rem;
-    }  
-    
+    }
+
     #sign .sign-btn {
         padding: 0.8rem 1.6rem;
     }
 
-    #sign > .right > .title {
+    #sign>.right>.title {
         font-size: 1.2rem;
     }
 }
-
-
