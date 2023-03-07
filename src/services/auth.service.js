@@ -1,9 +1,9 @@
 import Fetch from "./fetch/index";
 
 export default class AuthService {
-    static register = async ({ ...params }) => {
+    static create = async ({ ...params }) => {
         try {
-            const [user, errRes] = await Fetch.post(`users/register`, { ...params });
+            const [user, errRes] = await Fetch.post(`users/create`, { ...params });
 
             if (errRes) throw errRes;
             console.log(errRes)
@@ -19,7 +19,6 @@ export default class AuthService {
             const [user, errRes] = await Fetch.post(`users/login`, { ...params });
 
             if (errRes) throw errRes;
-            console.log(errRes)
 
             return user;
         } catch (e) {
