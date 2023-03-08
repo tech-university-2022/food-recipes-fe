@@ -53,20 +53,20 @@ const SignIn = () => {
                         <div className='field'>
                             <div className='label'>Email</div>
                             <input type='email' value={email} onChange={handleChangeEmail}/>
-                            {!isEmailValid && <div className='error'>* Incorrect Email</div>}
+                            {!isEmailValid && <div className='error'>* Email invalid</div>}
                         </div>
                         <div className='field'>
                             <div className='label'>Password</div>
                             <input type='password' value={password} onChange={handleChangePassword}/>
                         </div>
                     </form>
-                    <div className='ask'>Forgot password? <Link className='link' to='/reset-password'>Reset</Link></div>
                     <button 
                         className='sign-btn'
                         onClick={() => handleSignIn(email, password)}
                     >
                         SIGN IN
                     </button>
+                    <div className='ask bottom'>Forgot password? <Link className='link' to='/reset-password'>Reset</Link></div>
                 </div>
             </div>
         </div>
