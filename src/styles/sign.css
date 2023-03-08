@@ -1,0 +1,103 @@
+.background {
+    background-color: var(--secondary-color);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding: 4rem 11rem;
+}
+
+#sign {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0.1rem 1rem var(--primary-color);
+    box-sizing: border-box;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.2rem;
+    gap: 3rem;
+}
+
+#sign > .left {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#sign > .right {
+    box-sizing: border-box;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#sign > .right > .title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+#sign .ask {
+    font-size: 1.2rem;
+}
+
+#sign .ask > .link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#sign .field {
+    width: 100%;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+#sign input {
+    font-size: 1.2rem;
+}
+
+#sign .error {
+    color: var(--tertiary-color);
+    font-style: italic;
+    margin-top: 0.4rem;
+}
+
+#sign .sign-btn {
+    color: var(--quinary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2rem;
+    margin: 1rem;
+    box-shadow: 0 0.1rem 1rem var(--quinary-color);
+}
+
+#sign .sign-btn:hover {
+    font-size: 1rem;
+    background-color: var(--quaternary-color);
+}
+
+/* phone mode */
+@media only screen and (max-width: 936px) {
+    .background {
+        padding: 5rem 2rem;
+    }
+    #sign {
+        grid-template-columns: auto;
+        padding: 2rem;
+    }
+
+    #sign > .left {
+      display: none;
+    }
+}
