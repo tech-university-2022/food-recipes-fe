@@ -6,12 +6,17 @@ const Dotenv = require('dotenv-webpack')
 module.exports = {
   entry: {
     react: 'react',
+    antd: 'antd',
     'react-dom': 'react-dom',
-    'react-router': 'react-router',
+    'react-router-dom': 'react-router-dom',
     index: {
       import: path.join(__dirname, 'src', 'index.js'),
-      dependOn: ['react', 'react-dom']
-    }
+      dependOn: ['react', 'react-router-dom']
+    },
+    signin: {
+      import: [path.join(__dirname, 'src', 'pages', 'SignIn', 'index.js')],
+      dependOn: ['react', 'antd', 'react-router-dom']
+    },
   },
   output: {
     filename: '[name].[contenthash].js',

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Home } from '../pages';
+import { Home, SignIn } from '../pages';
 
 import NavRoute from './NavRoute';
 
@@ -13,6 +13,7 @@ const Router = () => {
                 <Route path="/menu-2" element={<Home/>} />
                 <Route path="/contact" element={<Home/>} />
             </Route>
+            <Route path="/signin" element={<SignIn/>}/>
         </Routes>
     )
 };

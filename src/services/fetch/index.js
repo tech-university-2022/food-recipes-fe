@@ -1,5 +1,5 @@
-import { Validator } from "@frontend/utils/validate.util.js";
-import useAuth from "@frontend/hooks/auth.js";
+import { Validator } from "../../utils/validate";
+import useAuth from "../../hooks/auth";
 
 const URL = `${process.env.BACKEND_DOMAIN}`;
 

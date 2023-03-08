@@ -1,0 +1,157 @@
+.background {
+    background-color: var(--secondary-color);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#sign {
+    background-color: #ffffff;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0.1rem 1rem var(--primary-color);
+    box-sizing: border-box;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.2rem;
+    gap: 3rem;
+    margin: auto;
+}
+
+#sign > .left {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#sign > .right {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+#sign > .right > .title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+#sign .ask > .link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#sign .field {
+    width: 100%;
+    text-align: left;
+    margin: 1.2rem 0;
+}
+
+#sign input {
+    font-size: 1.2rem;
+}
+
+#sign .error {
+    color: var(--tertiary-color);
+    font-style: italic;
+    margin-top: 0.4rem;
+}
+
+#sign .sign-btn {
+    color: var(--quinary-color);
+    font-size: 1.2rem;
+    background-color: var(--secondary-color);
+}
+
+#sign .bottom {
+    text-align: center;
+    width: 100%;
+}
+
+/* phone mode */
+@media only screen and (max-height: 600px) {
+    .background {
+        padding: 2rem 8rem;
+    }
+
+    #sign {
+        padding: 1rem 3rem;
+    }
+
+    #sign .sign-btn {
+        margin: 0.5rem;
+    }
+
+    #sign .bottom {
+        bottom: 0.5rem;
+    }
+}
+
+@media only screen and (max-height: 480px) {
+    #sign {
+        overflow: auto;
+        overflow-x: visible;
+    }
+
+    #sign > .right {
+        margin-bottom: 2rem;
+    }
+
+    #sign form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #sign .field {
+        margin: 0.5rem 0;
+    }
+
+    #sign .bottom {
+        bottom: -2rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #sign {
+        grid-template-columns: auto;
+    }
+
+    #sign > .left {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #sign .sign-btn {
+        padding: 0.8rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #sign, #sign input, #sign .sign-btn {
+        font-size: 0.8rem;
+    }  
+    
+    #sign .sign-btn {
+        padding: 0.8rem 1.6rem;
+    }
+
+    #sign > .right > .title {
+        font-size: 1.2rem;
+    }
+}
+
+
