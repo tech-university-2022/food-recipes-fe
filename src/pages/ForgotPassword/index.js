@@ -8,43 +8,31 @@ import "../../styles/sign.css";
 import Img from '../../assets/sign-pic.svg';
 
 const Content = () => {
-    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
     const [emailError, setEmailError] = useState(true);
 
-    const handleNameChange = (event) => {
-        setName(event.target.value)
-    }
     const handleEmailChange = (event) => {
         let tmpEmail = event.target.value
         setEmail(event.target.value)
         setEmailError(Validator.isValidEmail(tmpEmail))
     }
 
-    const handlePasswordChange = (event) => {
-        setPassword(event.target.value)
-    }
-
     const handleOnSubmit = async (event) => {
         event.preventDefault();
         const data = {
-            name: name,
             email: email,
-            password: password,
         }
         console.log(data)
         try {
-            const response = await AuthService.create(data);
-            console.log(response)
+            //const response = await AuthService.create(data);
+            //console.log(response)
+            message.info("Your password is reset. Please check your email for the new password")
         }
         catch (e) {
             console.log("error", e)
             message.error("Something is wrong. Please try again later")
         }
     }
-    console.log(email)
-    console.log(emailError)
 
     return (
         <div className="background">
@@ -53,25 +41,17 @@ const Content = () => {
                     <img src={Img} />
                 </div>
                 <div className="right">
-                    <div className='title'>Get  Started!</div>
-                    <div className='ask'>Already has account? <Link className='link' to='/signin'>Sign In</Link></div>
+                    <div className='title'>Reset your password</div>
                     <form onSubmit={handleOnSubmit}>
-                        <div className="field">
-                            <div className="label"> Name </div>
-                            <input type="text" value={name} onChange={handleNameChange} />
-                        </div>
                         <div className="field">
                             <div className="label"> Email </div>
                             <input type="text" value={email} onChange={handleEmailChange} />
                             {!emailError && <div className='error'>* Email invalid</div>}
                         </div>
-                        <div className="field">
-                            <div className="label"> Password </div>
-                            <input type="password" value={password} onChange={handlePasswordChange} />
-                        </div>
                         <button className='submit-btn sign-btn'>
-                            SIGN UP
+                            Submit
                         </button>
+                        <div className='ask'> Get back to <Link className='link' to='/signin'>Sign in</Link></div>
                     </form>
                 </div>
             </div>
@@ -79,10 +59,10 @@ const Content = () => {
     )
 }
 
-const SignUp = () => {
+const ForgotPassword = () => {
     return (
         <Content />
     )
 }
 
-export default memo(SignUp)
+export default memo(ForgotPassword)
