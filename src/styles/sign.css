@@ -6,7 +6,7 @@
     left: 0;
     top: 0;
     box-sizing: border-box;
-    padding: 5rem 11rem;
+    padding: 4rem 11rem;
 }
 
 #sign {
@@ -20,8 +20,8 @@
     padding: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
     font-size: 1.2rem;
+    gap: 3rem;
 }
 
 #sign > .left {
