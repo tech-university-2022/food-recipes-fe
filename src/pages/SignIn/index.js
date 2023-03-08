@@ -61,7 +61,7 @@ const SignIn = () => {
                         </div>
                     </form>
                     <button 
-                        className='sign-btn'
+                        className='submit-btn sign-btn'
                         onClick={() => handleSignIn(email, password)}
                     >
                         SIGN IN

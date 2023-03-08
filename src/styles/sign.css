@@ -72,16 +72,7 @@
 #sign .sign-btn {
     color: var(--quinary-color);
     font-size: 1.2rem;
-    font-weight: 600;
     background-color: var(--secondary-color);
-    padding: 0.8rem 5rem;
-    border: none;
-    border-radius: 0.5rem;
-    margin: 1rem;
-}
-
-#sign .sign-btn:hover {
-    box-shadow: 0.2rem 0.2rem 1rem var(--shadow-color);
 }
 
 #sign .bottom {
