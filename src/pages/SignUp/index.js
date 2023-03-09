@@ -5,7 +5,7 @@ import { AuthService } from "../../services"
 import { message } from 'antd';
 
 import "../../styles/sign.css";
-import Img from '../../assets/sign-pic.svg';
+import { SignPic } from '../../assets';
 
 const Content = () => {
     const [name, setName] = useState('');
@@ -47,12 +47,12 @@ const Content = () => {
     console.log(emailError)
 
     return (
-        <div className="background">
-            <div id="sign">
-                <div className="left">
-                    <img src={Img} />
+        <div className='background'>
+            <div id='sign'>
+                <div className='left'>
+                    <img src={SignPic} />
                 </div>
-                <div classname="right">
+                <div className='right'>
                     <div className='title'>Get  Started!</div>
                     <div className='ask'>Already has account? <Link className='link' to='/signin'>Sign In</Link></div>
                     <form onSubmit={handleOnSubmit}>

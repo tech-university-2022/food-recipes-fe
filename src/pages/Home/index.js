@@ -2,6 +2,7 @@ import MainLayout from "../../layouts/MainLayout"
 import React, { memo, useCallback, useEffect, useState } from "react"
 import "./style.css"
 import Pagination from "../../components/Pagination"
+import { RecipeItem } from "../../components/Recipe"
 
 const Content = () => {
     const [page, setPage] = useState(0);
@@ -21,6 +22,12 @@ const Content = () => {
                     setPage(page);
                     console.log(page)
                 }}
+            />
+            <RecipeItem
+                name='Delicious Fancy Glazed Blueberry Donuts'
+                authorName='Nhi Mai'
+                createdAt='2023-03-08'
+                numfeed={100}
             />
         </div>
     )

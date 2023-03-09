@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
   --primary-color: #3A5A40;
@@ -9,11 +8,14 @@
   --quinary-color: #fefae0;
   --text-color: #625E5E;
   --shadow-color: #d3d2d2;
+  --black-color: #283618;
+  --white-color: #FFFFFF;
+  --gray-color: #CAC1C1;
 }
 
 #root {
   font-size: 1rem;
-  font-family: Nunito, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--text-color);
 }
 
@@ -21,6 +23,8 @@ img {
   max-width: 100%;
   max-height: 100%;
 }  
+
+/* button */
 
 .submit-btn {
   font-weight: 600;
@@ -48,4 +52,11 @@ input {
   border: none;
   border-bottom: 0.1rem solid var(--primary-color);
   color: var(--text-color);
+}
+
+/* box */
+.box {
+  border: 0.1rem solid var(--gray-color);
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
 }

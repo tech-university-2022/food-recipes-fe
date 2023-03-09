@@ -4,7 +4,7 @@ import { Validator } from "../../utils/validate";
 import { AuthService } from "../../services"
 import { message } from 'antd';
 
-import Img from '../../assets/sign-pic.svg'
+import { SignPic } from '../../assets'
 import '../../styles/sign.css'
 
 
@@ -44,7 +44,7 @@ const SignIn = () => {
         <div className='background'>
             <div id='sign'>
                 <div className='left'>
-                    <img src={Img}/>
+                    <img src={SignPic}/>
                 </div>
                 <div className='right'>
                     <div className='title'>Get  Started!</div>

@@ -6,20 +6,23 @@
 }
 
 #pagination > button {
-    font-family: 'Tilt Neon', cursive;
-    color: var(--quinary-color);
-    background-color: var(--secondary-color);
-    width: 2rem;
-    height: 2rem;
+    border: 0.1rem solid var(--black-color);
+    background-color: var(--white-color);
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    border: 0;
 }
 
 #pagination > button:hover, 
 #pagination > .chosen-page-btn {
-    background-color: var(--primary-color);
+    border: 0.2rem solid var(--black-color);
 }
 
 #pagination > button:disabled {
-    background-color: var(--text-color);
+    border: 0.1rem solid var(--gray-color);
+}
+
+#pagination > button > img {
+    width: 1.2rem;
+    height: 1.2rem;
 }

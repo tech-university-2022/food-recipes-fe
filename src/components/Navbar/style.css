@@ -1,52 +1,34 @@
 #navbar {
-    /* size */
     width: 100vw;
-    height: 5vh;
-    /* color */
-    background-color: white;
-    /* display-flex */
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    /* position */
+    height: 12rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     position: fixed;
     left: 0;
     top: 0;
-    /* others */
-    padding: 0.5rem 1rem;
+    box-sizing: border-box;
     box-shadow: 0 0.1rem 1rem gainsboro;
     z-index: 2;
-}
-  
-.navbar-item {
-    position: relative;
-    text-align: center;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    font-size: 1.1rem;
 }
 
-.navbar-title {
-    font-weight: 600;
+#navbar > img {
+    background-color: antiquewhite;
+    height: 5rem;
+    margin: auto;
 }
 
-.navbar-title:hover {
-    font-weight: 700;
+#navbar .category {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.menu {
-    position: absolute;
-    margin-top: 1rem;
-    width: 7rem;
-    padding: 0.25rem 0.5rem;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.1rem 1rem gainsboro;
+#navbar .navbar-title {
+    font-weight: 500;
 }
 
-.menu > .item {
-    border-radius: 0.4rem;
-    padding: 0 0.25rem;
-}
-
-.menu > .item:hover {
-    background-color: var(--quinary-color);
-    font-weight: 700;
+#navbar .navbar-title:hover {
+    color: var(--quinary-color);
 }
