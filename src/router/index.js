@@ -1,8 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Home, SignIn } from '../pages';
+import { Home, SignIn, SignUp, ForgotPassword } from '../pages';
 
-import { SignUp } from '../pages';
 import NavRoute from './NavRoute';
 
 const Router = () => {
@@ -16,6 +15,7 @@ const Router = () => {
             </Route>
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/reset-password" element={<ForgotPassword />} />
         </Routes>
     )
 };
