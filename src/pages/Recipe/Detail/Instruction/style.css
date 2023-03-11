@@ -28,13 +28,20 @@
     margin-bottom: 4rem;
 }
 
+#recipe-detail>.instruction>.ingredients .text {
+    margin-left: 3rem;
+    max-width: calc((100vw - 8rem) / 2 - 2rem);
+    text-align: left;
+    line-height: 2rem;
+}
+
 #recipe-detail>.instruction>.steps>.title {
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 
-#recipe-detail>.instruction>.steps .content {
+#recipe-detail>.instruction .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 0.2rem;

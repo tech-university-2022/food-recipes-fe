@@ -1,7 +1,6 @@
 import React from 'react'
 import { Time, Mess } from '../../../assets'
 import './style.css'
-import moment from 'moment'
 import { useNavigate } from 'react-router-dom'
 
 const RecipeBox = ({ id = 1, name, author_name, time, comment_count}) => {

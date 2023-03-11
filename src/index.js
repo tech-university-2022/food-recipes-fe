@@ -5,13 +5,14 @@ import Router from './router'
 
 import './styles/index.css'
 import './styles/antd-customize.css'
+import './styles/checkbox.css'
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Router />
-    </BrowserRouter>
-  )
+	return (
+		<BrowserRouter>
+			<Router />
+		</BrowserRouter>
+	)
 }
 
 const rootElement = document.getElementById('root')

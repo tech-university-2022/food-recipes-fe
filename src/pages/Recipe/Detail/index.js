@@ -78,10 +78,28 @@ const Content = () => {
 			'media_url': [],
 			'serve_for': 4,
 			'comment_count': 100,
-			'ingredients': {
-				'beef': '400g',
-				'tomato': '1'
-			},
+			'ingredients':[
+				{
+					'unit': 'g',
+					'quantity': 100,
+					'name': 'beef'
+				},
+				{
+					'unit': 'g',
+					'quantity': 100,
+					'name': 'beef'
+				},
+				{
+					'unit': 'g',
+					'quantity': 100,
+					'name': 'beef'
+				},
+				{
+					'unit': 'g',
+					'quantity': 100,
+					'name': 'beef'
+				}
+			],
 			'steps': [
 				'This is step 1', 
 				'This is step 2',

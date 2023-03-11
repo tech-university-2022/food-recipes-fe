@@ -90,3 +90,7 @@ input {
 .overflow-hidden {
   overflow: hidden;
 }
+
+.items-center {
+  align-items: center;
+}
