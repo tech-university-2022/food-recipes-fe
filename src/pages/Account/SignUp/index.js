@@ -48,7 +48,7 @@ const Content = () => {
 
 	return (
 		<div className='background'>
-			<div id='sign'>
+			<div id='sign-up' className='sign'>
 				<div className='left'>
 					<img src={SignPic} />
 				</div>
@@ -69,7 +69,7 @@ const Content = () => {
 							<div className="label"> Password </div>
 							<input type="password" value={password} onChange={handlePasswordChange} />
 						</div>
-						<button className='submit-btn sign-btn'>
+						<button className='btn sign-btn'>
                             SIGN UP
 						</button>
 					</form>

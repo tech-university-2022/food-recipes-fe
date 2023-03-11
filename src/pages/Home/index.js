@@ -26,9 +26,9 @@ const Content = () => {
 			/>
 			<RecipeBox
 				name='Delicious Fancy Glazed Blueberry Donuts'
-				authorName='Nhi Mai'
-				createdAt='2023-03-08'
-				numfeed={100}
+				author_name='Nhi Mai'
+				time='3 days ago'
+				comment_count={100}
 			/>
 		</div>
 	)

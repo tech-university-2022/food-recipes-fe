@@ -1,0 +1,45 @@
+#recipe-detail>.comments {
+    border-bottom: 0.2rem solid var(--red-color);
+    margin-bottom: 4rem;
+    max-width: calc(100vw - 8rem);
+}
+
+#recipe-detail>.comments .load-btn {
+    width: 100%;
+    border: 0.1rem solid var(--text-color);
+    color: var(--text-color);
+    font-weight: 500;
+    background-color: var(--white-color);
+    padding: 0.5rem 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+#recipe-detail>.comments .load-btn:hover {
+    box-shadow: 0 0.1rem 1rem var(--shadow-color);
+}
+
+#recipe-detail>.comments .load-btn:disabled {
+    border: 0.1rem solid var(--gray-color);
+    color: var(--gray-color);
+}
+
+#recipe-detail>.comments .input-comment {
+    border: 0.1rem solid var(--gray-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    min-width: calc(100vw - 8rem);
+    max-width: calc(100vw - 8rem);
+    resize: none;
+    outline: none;
+    margin: 1rem 0;
+    box-sizing: border-box;
+}
+
+#recipe-detail>.comments .submit-btn {
+    color: var(--quinary-color);
+    font-size: 1.2rem;
+    background-color: var(--secondary-color);
+    margin-bottom: 4rem;
+}

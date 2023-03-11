@@ -42,7 +42,7 @@ const SignIn = () => {
 
 	return (
 		<div className='background'>
-			<div id='sign'>
+			<div id='sign-in' className='sign'>
 				<div className='left'>
 					<img src={SignPic}/>
 				</div>
@@ -61,7 +61,7 @@ const SignIn = () => {
 						</div>
 					</form>
 					<button 
-						className='submit-btn sign-btn'
+						className='btn sign-btn'
 						onClick={() => handleSignIn(email, password)}
 					>
                         SIGN IN

@@ -1,6 +1,6 @@
 #navbar {
     width: 100vw;
-    height: 12rem;
+    height: 6rem;
     background-color: var(--primary-color);
     color: var(--white-color);
     position: fixed;
@@ -9,20 +9,15 @@
     box-sizing: border-box;
     box-shadow: 0 0.1rem 1rem gainsboro;
     z-index: 2;
-    display: grid;
-    grid-template-rows: 3fr 1fr;
     font-size: 1.1rem;
-}
-
-#navbar > img {
-    background-color: antiquewhite;
-    height: 5rem;
-    margin: auto;
-}
-
-#navbar .category {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#navbar img {
+    max-height: 4rem;
 }
 
 #navbar .navbar-title {
@@ -31,4 +26,19 @@
 
 #navbar .navbar-title:hover {
     color: var(--quinary-color);
+}
+
+#navbar .account {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--quinary-color);
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#navbar .account .avatar {
+    width: 4rem;
+    height: 4rem;
 }

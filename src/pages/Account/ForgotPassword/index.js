@@ -36,7 +36,7 @@ const ForgotPassword = () => {
 
 	return (
 		<div className="background">
-			<div id="sign">
+			<div id="forgot-password" className='sign'>
 				<div className="left">
 					<img src={SignPic} />
 				</div>
@@ -48,7 +48,7 @@ const ForgotPassword = () => {
 							<input type="text" value={email} onChange={handleEmailChange} />
 							{!emailError && <div className='error'>* Email invalid</div>}
 						</div>
-						<button className='submit-btn sign-btn'>
+						<button className='btn sign-btn'>
                             Submit
 						</button>
 						<div className='ask'> Get back to <Link className='link' to='/signin'>Sign in</Link></div>

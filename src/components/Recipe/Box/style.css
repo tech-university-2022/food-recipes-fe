@@ -1,8 +1,8 @@
-#recipe-item {
+.recipe-item {
     border: 0.1rem solid var(--gray-color);
     border-radius: 0.5rem;
     box-shadow: 0 0.1rem 1rem var(--shadow-color);
-    width: 20rem;
+    width: 18rem;
     height: 25rem;
     box-sizing: border-box;
     display: grid;
@@ -10,29 +10,29 @@
     overflow: hidden;
 }
 
-#recipe-item > .information {
+.recipe-item>.information {
     margin: auto;
     overflow: auto;
     padding: 0 1rem;
 }
 
-#recipe-item > .information > .name {
+.recipe-item>.information>.name {
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-#recipe-item > .information > .author {
+.recipe-item>.information>.author {
     padding: 1rem 0;
 }
 
-#recipe-item > .information > .icon {
+.recipe-item>.information>.icon {
     display: grid;
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
 }
 
-#recipe-item > .information > .icon > .item {
+.recipe-item>.information>.icon>.item {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
