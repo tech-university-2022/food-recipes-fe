@@ -1,0 +1,12 @@
+#home-layout {
+    width: min-content;
+    min-width: max-content;
+    min-height: 100vh;
+    position: absolute;
+    left: 0;
+}
+
+#home-layout>.content {
+    padding-bottom: 12rem;
+    margin-top: 12rem;
+}

@@ -1,24 +1,24 @@
 import React, { memo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Logo } from '../../assets' 
+import { Logo } from '../../../assets'
 import './style.css'
-import { navbarCategories } from '../../constants'
+import { navbarCategories } from '../../../constants'
 
 const Navbar = () => {
 	const navigate = useNavigate()
-    
+
 	return (
-		<div 
-			id="navbar"
+		<div
+			id="navbar-home"
 		>
-			<img 
+			<img
 				src={Logo}
 				alt="Logo"
 				onClick={() => navigate('/')}
 			/>
 			<div className="category">
 				{navbarCategories?.map(item => (
-					<div 
+					<div
 						className="navbar-title"
 						onClick={() => navigate(item.endpoint)}
 						key={item.name}

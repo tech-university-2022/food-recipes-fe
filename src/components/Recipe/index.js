@@ -1,1 +1,1 @@
-export { default as RecipeItem } from "./Item/index.js";
+export { default as RecipeBox } from './Box/index.js'
