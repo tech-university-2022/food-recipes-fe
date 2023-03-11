@@ -14,13 +14,13 @@
     align-items: center;
 }
 
-#footer > .form > .title {
+#footer>.form>.title {
     margin-bottom: 0.2rem;
     font-size: 2rem;
     font-weight: 700;
 }
 
-#footer > .form > .input {
+#footer>.form>.input {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-gap: 1rem;
@@ -29,13 +29,13 @@
     line-height: 2rem;
 }
 
-#footer > .form > .input > input {
+#footer>.form>.input>input {
     width: 100%;
     border: none;
     border-radius: 0.5rem;
     outline: none;
 }
 
-#footer > .contact {
+#footer>.contact {
     line-height: 1.5rem;
 }

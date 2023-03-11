@@ -1,0 +1,56 @@
+#recipe-detail>.instruction {
+    border-bottom: 0.2rem solid var(--red-color);
+    margin-bottom: 4rem;
+    max-width: calc(100vw - 8rem);
+}
+
+#recipe-detail>.instruction .item {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+#recipe-detail>.instruction .text {
+    overflow-wrap: break-word;
+}
+
+
+#recipe-detail>.instruction>.ingredients {
+    margin: 2rem 0;
+}
+
+#recipe-detail>.instruction>.ingredients>.title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#recipe-detail>.instruction>.steps {
+    margin-bottom: 4rem;
+}
+
+#recipe-detail>.instruction>.steps>.title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+#recipe-detail>.instruction>.steps .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.2rem;
+    column-gap: 4rem;
+}
+
+
+#recipe-detail>.instruction>.steps .item>.number {
+    min-width: 2rem;
+    max-width: 2rem;
+    min-height: 2rem;
+    max-height: 2rem;
+    color: var(--white-color);
+    background-color: var(--red-color);
+    border-radius: 50%;
+    font-weight: 500;
+    text-align: center;
+    line-height: 2rem;
+}

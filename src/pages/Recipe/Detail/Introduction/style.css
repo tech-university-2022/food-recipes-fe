@@ -1,0 +1,71 @@
+#recipe-detail>.introduction {
+    margin: 2rem 0;
+    border-bottom: 0.2rem solid var(--red-color);
+}
+
+#recipe-detail>.introduction .carousel {
+    max-width: calc(100vw - 8rem);
+    height: 30rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 2rem 0;
+    background-color: var(--quaternary-color);
+}
+
+#recipe-detail>.introduction .name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+#recipe-detail>.introduction .created {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    max-width: calc(100vw - 8rem);
+    flex-wrap: wrap;
+}
+
+#recipe-detail>.introduction .icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+#recipe-detail>.introduction .created>.item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#recipe-detail>.introduction .description {
+    width: calc(100vw - 8rem);
+    font-weight: 500;
+    margin: 2rem 0;
+    overflow-wrap: break-word;
+}
+
+#recipe-detail>.introduction .cook {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    text-transform: uppercase;
+    max-width: calc(100vw - 8rem);
+    flex-wrap: wrap;
+}
+
+#recipe-detail>.introduction .cook>.item {
+    padding: 0 2rem;
+    line-height: 1.4rem;
+}
+
+#recipe-detail>.introduction .cook>.item>.label {
+    color: var(--gray-color);
+    font-weight: 400;
+}
