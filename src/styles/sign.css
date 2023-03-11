@@ -41,7 +41,7 @@
     width: 100%;
 }
 
-#sign .right .title {
+#sign>.right>.title {
     font-weight: 700;
     font-size: 2.5rem;
     color: var(--primary-color);

@@ -1,12 +1,12 @@
-#main-layout {
+#home-layout {
     width: min-content;
     min-width: max-content;
-    min-height: calc(100vh - 12rem);
+    min-height: 100vh;
     position: absolute;
     left: 0;
-    top: 12rem;
 }
 
-#main-layout > .content {
+#home-layout>.content {
     padding-bottom: 12rem;
+    margin-top: 12rem;
 }

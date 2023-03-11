@@ -1,4 +1,4 @@
-#navbar {
+#navbar-home {
     width: 100vw;
     height: 12rem;
     background-color: var(--primary-color);
@@ -14,21 +14,21 @@
     font-size: 1.1rem;
 }
 
-#navbar > img {
+#navbar-home>img {
     background-color: antiquewhite;
     height: 5rem;
     margin: auto;
 }
 
-#navbar .category {
+#navbar-home .category {
     display: flex;
     justify-content: space-evenly;
 }
 
-#navbar .navbar-title {
+#navbar-home .navbar-title {
     font-weight: 500;
 }
 
-#navbar .navbar-title:hover {
+#navbar-home .navbar-title:hover {
     color: var(--quinary-color);
 }

@@ -3,9 +3,12 @@ import React, { memo } from 'react'
 
 import './style.css'
 
-const MainLayout = ({ content }) => {
+const HomeLayout = ({ navbar, content }) => {
 	return (
-		<div id="main-layout">
+		<div id="home-layout">
+			<div className='navbar'>
+				{navbar}
+			</div>
 			<div className="content">
 				{content}
 			</div>
@@ -14,4 +17,4 @@ const MainLayout = ({ content }) => {
 	)
 }
 
-export default memo(MainLayout)
+export default memo(HomeLayout)
