@@ -6,9 +6,11 @@ import { message } from 'antd'
 
 import { SignPic } from '../../../assets'
 import '../../../styles/sign.css'
+// import useAuth from '../../../hooks/auth'
 
 
 const SignIn = () => {
+	// const { setAuth } = useAuth()
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 	const [isEmailValid, setIsEmailValid] = useState(true)

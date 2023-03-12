@@ -1,7 +1,7 @@
 import React, { memo, useState } from 'react'
 import './style.css'
 import Pagination from '../../components/Pagination'
-import { RecipeBox } from '../../components/Recipe'
+import { RecipeBox, RecipeItem } from '../../components/Recipe'
 import HomeLayout from '../../layouts/HomeLayout'
 import Navbar from './Navbar'
 
@@ -29,6 +29,18 @@ const Content = () => {
 				author_name='Nhi Mai'
 				time='3 days ago'
 				comment_count={100}
+			/>
+			<RecipeItem
+				name='Delicious Fancy Glazed Blueberry Donuts'
+				time='1 month ago'
+				description='This is a bla bla hong biet ghi gi vo'
+				url='day la url S3'
+			/>
+			<RecipeItem
+				name='Delicious Fancy Glazed Blueberry Donuts'
+				time='1 month ago'
+				description='This is a bla bla hong biet ghi gi vo. This is a bla bla hong biet ghi gi vo. This is a bla bla hong biet ghi gi vo. This is a bla bla hong biet ghi gi vo. This is a bla bla hong biet ghi gi vo. This is a bla bla hong biet ghi gi vo. This is a bla bla hong biet ghi gi vo. This is a bla bla hong biet ghi gi vo'
+				url='day la url S3'
 			/>
 		</div>
 	)

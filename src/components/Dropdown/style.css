@@ -3,17 +3,17 @@
     color: var(--text-color);
     width: max-content;
     box-shadow: 0 0.5rem 1rem var(--shadow-color);
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     right: 0;
     border-radius: 5%;
     overflow: hidden;
 }
 
-.dropdown .item {
+.dropdown>.item {
     padding: 0.5rem 2rem;
 }
 
-.dropdown .item:hover {
+.dropdown>.item:hover {
     background-color: var(--quinary-color);
 }

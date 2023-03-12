@@ -1,87 +1,85 @@
-import { Validator } from "../../utils/validate";
-import useAuth from "../../hooks/auth";
+import { Validator } from '../../utils/validate'
+import useAuth from '../../hooks/auth'
 
-const URL = `${process.env.BACKEND_DOMAIN}`;
+const URL = `${process.env.BACKEND_DOMAIN}`
 
 const handleSuccessResponse = async (response) => {
-    try {
-        const statusCode = response.status;
+	try {
+		const statusCode = response.status
 
-        const resData = await response.json();
+		const resData = await response.json()
 
-        if (statusCode === 401 || statusCode == 400 || statusCode == 500) {
-            throw {
-                code: statusCode,
-                message: resData,
-            };
-        }
+		if (statusCode === 401 || statusCode == 400 || statusCode == 500) {
+			throw {
+				code: statusCode,
+				message: resData,
+			}
+		}
 
-        return [resData, null];
-    } catch (err) {
-        return [null, err];
-    }
-};
+		return [resData, null]
+	} catch (err) {
+		return [null, err]
+	}
+}
 
 const handleErrorResponse = (errResponse) => {
-    return [
-        null,
-        {
-            code: 500,
-            message: errResponse,
-        },
-    ];
-};
+	return [
+		null,
+		{
+			code: 500,
+			message: errResponse,
+		},
+	]
+}
 
 export default class Fetch {
-    static get(route, params = {}, baseUrl = URL) {
-        return this.xhr(route, params, "GET", baseUrl);
-    }
+	static get(route, params = {}, baseUrl = URL) {
+		return this.xhr(route, params, 'GET', baseUrl)
+	}
 
-    static put(route, params = {}, baseUrl = URL) {
-        return this.xhr(route, params, "PUT", baseUrl);
-    }
+	static put(route, params = {}, baseUrl = URL) {
+		return this.xhr(route, params, 'PUT', baseUrl)
+	}
 
-    static post(route, params = {}, baseUrl = URL) {
-        return this.xhr(route, params, "POST", baseUrl);
-    }
+	static post(route, params = {}, baseUrl = URL) {
+		return this.xhr(route, params, 'POST', baseUrl)
+	}
 
-    static delete(route, params = {}, baseUrl = URL) {
-        return this.xhr(route, params, "DELETE", baseUrl);
-    }
+	static delete(route, params = {}, baseUrl = URL) {
+		return this.xhr(route, params, 'DELETE', baseUrl)
+	}
 
-    static xhr(url, params, verb, baseUrl) {
-        if (!Validator.isValidUrl(url)) {
-            url = url.indexOf("/") === 0 ? `${baseUrl}${url}` : `${baseUrl}/${url}`;
-        }
+	static xhr(url, params, verb, baseUrl) {
+		if (!Validator.isValidUrl(url)) {
+			url = url.indexOf('/') === 0 ? `${baseUrl}${url}` : `${baseUrl}/${url}`
+		}
 
-        let options = { method: verb };
-        options["headers"] = {
-            "Content-Type": "application/json",
-        };
+		let options = { method: verb }
+		options['headers'] = {
+			'Content-Type': 'application/json',
+		}
 
+		const { token } = useAuth()
 
-        const { auth } = useAuth();
-        console.log("token", auth)
+		if (token) {
+			options['headers']['Authorization'] = `Bearer ${token}`
+		}
 
-        if (auth) {
-            options["headers"]["Authorization"] = `Bearer ${auth}`;
-        }
+		if (verb !== 'GET') {
+			options['body'] = JSON.stringify(params)
+		} else {
+			if (params) {
+				url = `${url}?${Object.keys(params)
+					.filter((key) => !!params[key])
+					.map((key) => `${key}=${params[key]}`)
+					.join('&')}`
+			}
+		}
 
-        if (verb !== "GET") {
-            options["body"] = JSON.stringify(params);
-        } else {
-            if (params) {
-                url = `${url}?${Object.keys(params)
-                    .filter((key) => !!params[key])
-                    .map((key) => `${key}=${params[key]}`)
-                    .join("&")}`;
-            }
-        }
-
-        console.log(url)
+		console.log(url)
         
-        const retyFunction = fetch(url, options).then(handleSuccessResponse).catch(handleErrorResponse);
+		const retyFunction = fetch(url, options).then(handleSuccessResponse).catch(handleErrorResponse)
        
-        return retyFunction;
-    }
+		return retyFunction
+	}
 }
