@@ -20,6 +20,7 @@ const DropDown = ({ items, isDropDown }) => {
 		}
 	}, [])
 
+	console.log(isDropDown)
 	console.log('items', items)
 
 	return (

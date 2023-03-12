@@ -91,6 +91,12 @@ input {
   overflow: hidden;
 }
 
-.items-center {
+.flex-center-y {
+  display: flex;
   align-items: center;
+  gap: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
 }

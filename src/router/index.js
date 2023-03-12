@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Home, SignIn, ForgotPassword, RecipeDetail } from '../pages'
+import { Home, SignIn, ForgotPassword, RecipeDetail, MyRecipes } from '../pages'
 
 import { SignUp } from '../pages'
 import NavRoute from './NavRoute'
@@ -15,8 +15,7 @@ const Router = () => {
             
 			<Route path="" element={<NavRoute />}>
 				<Route path="/recipe/:id" element={<RecipeDetail />} />
-				<Route path="/menu-2" element={<Home />} />
-				<Route path="/contact" element={<Home />} />
+				<Route path="/me/recipes" element={<MyRecipes />} />
 			</Route>
 		</Routes>
 	)
