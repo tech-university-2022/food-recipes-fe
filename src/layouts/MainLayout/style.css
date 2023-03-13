@@ -1,12 +1,12 @@
 #main-layout {
     width: max-content;
     min-width: 100vw;
-    min-height: calc(100vh - 6rem);
+    min-height: calc(100vh - 18rem);
     position: absolute;
     left: 0;
     top: 6rem;
 }
 
 #main-layout>.content {
-    padding: 2rem 4rem 14rem 4rem;
+    padding: 2rem 4rem 20rem 4rem;
 }
