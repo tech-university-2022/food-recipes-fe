@@ -29,4 +29,15 @@ export const navbarAccount = [
 	}
 ]
 
+export const footerCategories = [
+	{ 
+		name: 'About us', 
+		endpoint: '/about'
+	},
+	{
+		name: 'Contact us',
+		endpoint: '/contact'
+	}
+]
+
 export const COMMENT_LIMIT = 5

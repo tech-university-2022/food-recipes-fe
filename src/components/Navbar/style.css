@@ -23,6 +23,7 @@
 
 #navbar .navbar-title {
     font-weight: 500;
+    cursor: pointer;
 }
 
 #navbar .navbar-title:hover {
