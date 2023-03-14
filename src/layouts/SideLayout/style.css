@@ -1,0 +1,20 @@
+#side-layout {
+    width: max-content;
+    min-width: 100vw;
+    min-height: calc(100vh - 18rem);
+    position: absolute;
+    left: 0;
+    top: 6rem;
+}
+
+#side-layout>.body {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    margin-bottom: 18rem;
+}
+
+#side-layout>.body>.content {
+    padding: 2rem 4rem;
+    max-width: calc(100vw / 6 * 5);
+    box-sizing: border-box;
+}

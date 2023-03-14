@@ -3,7 +3,7 @@ import { useParams } from 'react-router'
 import { useNavigate } from 'react-router-dom'
 
 import { HeartFilled } from '@ant-design/icons'
-import { Popover } from 'antd'
+import { Tooltip } from 'antd'
 
 import { RecipeService } from '../../../services'
 import { LeftArrow } from '../../../assets'
@@ -23,14 +23,14 @@ const Action = () => {
 			<button onClick={() => navigate(-1)} >
 				<img src={LeftArrow}/>
 			</button>
-			<Popover 
+			<Tooltip 
 				title="Add to menu"
 				placement="bottom"
 			>
 				<HeartFilled 
 					className='icon'
 				/>
-			</Popover>
+			</Tooltip>
 		</div>
 	)
 }

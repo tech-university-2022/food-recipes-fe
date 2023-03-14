@@ -9,4 +9,5 @@
 #home-layout>.content {
     padding-bottom: 12rem;
     margin-top: 12rem;
+    box-sizing: border-box;
 }

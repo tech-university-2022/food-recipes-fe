@@ -2,8 +2,9 @@ import React, { memo, useState } from 'react'
 import Pagination from '../../../components/Pagination'
 import { RecipeItem } from '../../../components/Recipe'
 import SearchBar from '../../../components/SearchBar'
+import { AccountTab } from '../../../components/Tab'
 // import useAuth from '../../../hooks/auth'
-import MainLayout from '../../../layouts/MainLayout'
+import SideLayout from '../../../layouts/SideLayout'
 
 import './style.css'
 
@@ -50,7 +51,7 @@ const Content = () => {
 
 const MyRecipes = () => {
 	return (
-		<MainLayout content={<Content/>}/>
+		<SideLayout content={<Content/>} sidebar={<AccountTab/>}/>
 	)
 }
 

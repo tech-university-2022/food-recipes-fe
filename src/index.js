@@ -6,6 +6,7 @@ import Router from './router'
 import './styles/index.css'
 import './styles/antd-customize.css'
 import './styles/checkbox.css'
+import './styles/form.css'
 
 const App = () => {
 	return (

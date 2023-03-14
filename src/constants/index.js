@@ -40,4 +40,19 @@ export const footerCategories = [
 	}
 ]
 
+export const accountTab = [
+	{
+		name: 'My Recipes',
+		endpoint: '/me/recipes'
+	},
+	{
+		name: 'My Menu',
+		endpoint: '/me/menu'
+	},
+	{ 
+		name: 'My Profile', 
+		endpoint: '/me/profile'
+	},
+]
+
 export const COMMENT_LIMIT = 5
