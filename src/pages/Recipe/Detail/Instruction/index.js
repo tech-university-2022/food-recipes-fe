@@ -36,9 +36,9 @@ const Instruction = ({ ingredients = [], steps = [] }) => {
 
 			<div className='steps'>
 				<div className='title'>Instructions</div>
-				<div className='content'>
+				<ul className='content'>
 					{steps?.map((text, idx) => 
-						<div 
+						<li 
 							key={idx}
 							className='item'
 						>
@@ -48,9 +48,9 @@ const Instruction = ({ ingredients = [], steps = [] }) => {
 							<div className='text'>
 								{text}
 							</div>
-						</div>
+						</li>
 					)}
-				</div>
+				</ul>
 
 			</div>
 		</div>

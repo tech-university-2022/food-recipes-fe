@@ -7,7 +7,6 @@
 #recipe-detail>.instruction .item {
     display: flex;
     gap: 1rem;
-    margin: 1rem 0;
 }
 
 #recipe-detail>.instruction .text {
@@ -41,10 +40,22 @@
 }
 
 
-#recipe-detail>.instruction .content {
+#recipe-detail>.instruction>.steps .content {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+
+#recipe-detail>.instruction>.steps .content>.item {
+    margin-bottom: 2rem;
+}
+
+#recipe-detail>.instruction>.ingredients .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 0.2rem;
+    row-gap: 1rem;
     column-gap: 4rem;
 }
 
