@@ -19,7 +19,7 @@ const Content = () => {
 
 	return (
 		<div className='my-recipes'>
-			<div className='title'>List of recipes by <div className='user-name'>{currentUser.name}</div></div>
+			<div className='title'>List of recipes by <span className='user-name'>{currentUser.name}</span></div>
 			<SearchBar/>
 			<button className='create-btn btn'>Create new recipe</button>
 			<RecipeItem
