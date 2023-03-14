@@ -1,14 +1,16 @@
 #home-layout {
-    width: min-content;
-    min-width: max-content;
-    min-height: 100vh;
-    position: absolute;
-    left: 0;
     max-width: 100vw;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     box-sizing: border-box;
 }
 
 #home-layout>.content {
-    padding-bottom: 20rem;
-    margin-top: 12rem;
+    max-width: 100vw;
+    padding: 2rem 4rem;
+    margin-bottom: 18rem;
+    box-sizing: border-box;
+    /* margin-top: 12rem; */
 }

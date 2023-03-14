@@ -1,16 +1,13 @@
 .home {
-    width: 100vw;
-    min-width: 100vw;
-    box-sizing: border-box;
-    padding: 1rem;
+    width: 100%;
 }
 
-.home > .title {
+.home>.title {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
 }
 
-.home > p {
+.home>p {
     margin: 1rem 2rem;
 }

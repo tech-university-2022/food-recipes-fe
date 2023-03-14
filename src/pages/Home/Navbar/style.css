@@ -3,9 +3,9 @@
     height: 12rem;
     background-color: var(--primary-color);
     color: var(--white-color);
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    top: 0;
+    top: 0; */
     box-sizing: border-box;
     box-shadow: 0 0.1rem 1rem gainsboro;
     z-index: 2;

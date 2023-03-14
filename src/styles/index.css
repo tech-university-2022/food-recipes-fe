@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --primary-color: #3A5A40;
-  --secondary-color: #588157;
-  --tertiary-color: #BC6C25;
-  --quaternary-color: #F3A761;
-  --quinary-color: #fefae0;
-  --text-color: #625E5E;
+  --primary-color: #6b9080;
+  --secondary-color: #a4c3b2;
+  --tertiary-color: #cce3de;
+  --quaternary-color: #eaf4f4;
+  --quinary-color: #f6fff8;
+  --text-color: #5d675b;
   --shadow-color: #d3d2d2;
   --black-color: #283618;
   --white-color: #FFFFFF;
@@ -42,22 +42,6 @@ button {
 
 .btn:hover {
   box-shadow: 0.2rem 0.2rem 1rem var(--shadow-color);
-}
-
-/* form */
-
-.label {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
-input {
-  width: 100%;
-  height: 2rem;
-  outline: none;
-  border: none;
-  border-bottom: 0.1rem solid var(--primary-color);
-  color: var(--text-color);
 }
 
 /* classes */

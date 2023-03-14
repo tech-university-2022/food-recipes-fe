@@ -4,7 +4,7 @@
     min-height: calc(100vh - 18rem);
     position: absolute;
     left: 0;
-    top: 6rem;
+    top: 4rem;
 }
 
 #main-layout>.content {
