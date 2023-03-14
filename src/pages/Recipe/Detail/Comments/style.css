@@ -40,6 +40,6 @@
 #recipe-detail>.comments .submit-btn {
     color: var(--quinary-color);
     font-size: 1.2rem;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     margin-bottom: 4rem;
 }

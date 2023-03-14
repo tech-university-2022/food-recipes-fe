@@ -5,14 +5,14 @@
 }
 
 .my-recipes>.title>.user-name {
-    color: var(--quaternary-color);
+    color: var(--primary-color);
 }
 
 .my-recipes>.create-btn {
     margin: 2rem auto;
     margin-bottom: 4rem;
     display: block;
-    background-color: var(--quaternary-color);
+    background-color: var(--primary-color);
     color: var(--white-color);
     font-size: 1.2rem;
 }

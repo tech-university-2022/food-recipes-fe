@@ -14,7 +14,7 @@ const RecipeItem = ({ id, url, name, time, description }) => {
 	}
 
 	return (
-		<div className='recipe-item border-y'>
+		<div className='recipe-item'>
 			<div className='image'>
 				<img src={url}/>
 			</div>
