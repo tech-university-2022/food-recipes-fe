@@ -1,41 +1,46 @@
 import Fetch from './fetch/index'
 
-export default class AuthService {
-	static create = async ({ ...params }) => {
-		try {
-			const [user, errRes] = await Fetch.post('users/create', { ...params })
+const create = async ({ ...params }) => {
+	try {
+		const [user, errRes] = await Fetch.post('users/create', { ...params })
 
-			if (errRes) throw errRes
-			console.log(errRes)
+		if (errRes) throw errRes
+		console.log(errRes)
 
-			return user
-		} catch (e) {
-			console.log(e)
-		}
+		return user
+	} catch (e) {
+		console.log(e)
 	}
+}
 
-	static login = async ({ ...params }) => {
-		try {
-			const [user, errRes] = await Fetch.post('users/login', { ...params })
+const login = async ({ ...params }) => {
+	try {
+		console.log('params', params)
+		const [user, errRes] = await Fetch.post('users/login', { ...params })
 
-			if (errRes) throw errRes
+		if (errRes) throw errRes
 
-			return user
-		} catch (e) {
-			console.log(e)
-		}
+		return user
+	} catch (e) {
+		console.log(e)
 	}
+}
 
-	static change_password = async ({ ...params }) => {
-		try {
-			const [user, errRes] = await Fetch.post('users/change-password', { ...params })
+const change_password = async ({ ...params }) => {
+	try {
+		const [user, errRes] = await Fetch.post('users/change-password', { ...params })
 
-			if (errRes) throw errRes
-			console.log(errRes)
+		if (errRes) throw errRes
+		console.log(errRes)
 
-			return user
-		} catch (e) {
-			console.log(e)
-		}
+		return user
+	} catch (e) {
+		console.log(e)
 	}
+}
+
+export default {
+	create,
+	login, 
+	change_password
 }
