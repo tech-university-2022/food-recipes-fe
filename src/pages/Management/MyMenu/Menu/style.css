@@ -1,0 +1,22 @@
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: contain;
+    padding: 10px 20px;
+
+    border: 1px black solid;
+    margin-bottom: 5%;
+}
+
+.menu-container>p {
+    font-size: large;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-container>img {
+    width: 32px;
+    height: 32px;
+}
