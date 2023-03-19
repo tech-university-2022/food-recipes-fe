@@ -1,6 +1,7 @@
 import React from 'react'
 import { Input } from 'antd';
 import backgroundImage from '../../../assets/search-background-img.jpg'
+import './index.css'
 
 const { Search } = Input;
 
@@ -10,10 +11,10 @@ function SearchBar({searchPhrase, setSearchPhrase, handleSearch}) {
     }
 
     return (
-        <div id="search-bar" style={{ 
+        <div className="search-bar-background" style={{ 
   backgroundImage: `url(${backgroundImage})` 
             }} > 
-            <Search placeholder="Enter stuffs" loading={false} 
+            <Search className='search-bar' placeholder="Enter stuffs" loading={false} 
             value={searchPhrase} onChange={handleOnChange}
             onSearch={handleSearch}
             />
