@@ -1,0 +1,5 @@
+.menu-popup>.menus>.menu-item {
+    display: flex;
+    gap: 1rem;
+    background-color: aqua;
+}

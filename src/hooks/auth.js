@@ -12,7 +12,6 @@ const useAuth = () => {
 	const removeToken = () => {
 		Cookies.remove('token')
 		Cookies.remove('user')
-		window.location.reload()
 	}
 
 	return {

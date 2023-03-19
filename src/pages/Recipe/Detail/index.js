@@ -14,8 +14,9 @@ import Introduction from './Introduction'
 import Instruction from './Instruction'
 import Comments from './Comments'
 import { RecipeBox } from '../../../components/Recipe'
+import MenuPopup from '../../../components/MenuPopup'
 
-const Action = () => {
+const Action = ({ setOpen }) => {
 	const navigate = useNavigate()
 
 	return (
@@ -29,6 +30,7 @@ const Action = () => {
 			>
 				<HeartFilled 
 					className='icon'
+					onClick={() => setOpen(true)}
 				/>
 			</Tooltip>
 		</div>
@@ -59,6 +61,7 @@ const Recommend = () => {
 const Content = () => {
 	const { id } = useParams()
 	const [recipe, setRecipe] = useState({})
+	const [openMenus, setOpenMenus] = useState(false)
 
 	useEffect(() => {
 		console.log('recipe detail page', id)
@@ -118,7 +121,9 @@ const Content = () => {
 
 	return (
 		<div id="recipe-detail">
-			<Action/>
+			<Action
+				setOpen={setOpenMenus}
+			/>
 			<Introduction
 				{...recipe}
 			/>
@@ -130,6 +135,12 @@ const Content = () => {
 				comment_count={recipe.comment_count}
 			/>
 			<Recommend />
+
+			<MenuPopup
+				recipeId={id}
+				open={openMenus}
+				setOpen={setOpenMenus}
+			/>
 		</div>
 	)
 }
