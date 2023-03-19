@@ -4,6 +4,7 @@ import { Home, SignIn, ForgotPassword, RecipeDetail, MyRecipes } from '../pages'
 
 import { SignUp } from '../pages'
 import NavRoute from './NavRoute'
+import SearchResult from '../pages/SearchResult'
 import MyMenu from '../pages/Management/MyMenu'
 
 const Router = () => {
@@ -17,6 +18,9 @@ const Router = () => {
 			<Route path="" element={<NavRoute />}>
 				<Route path="/recipe/:id" element={<RecipeDetail />} />
 				<Route path="/me/recipes" element={<MyRecipes />} />
+				<Route path="/menu-2" element={<Home />} />
+				<Route path="/contact" element={<Home />} />
+				<Route path="/search" element={<SearchResult />} />
 				<Route path="/me/menu" element={<MyMenu />} />
 			</Route>
 		</Routes>

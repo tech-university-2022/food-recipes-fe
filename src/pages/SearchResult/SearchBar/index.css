@@ -1,0 +1,11 @@
+.search-bar-background {
+    height: 30vh;
+    width: 100vw;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar {
+    width: 50vw;
+}

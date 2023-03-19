@@ -1,0 +1,28 @@
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100vw - 8rem);
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.search-results-total {
+    height: 106px;
+    left: 76px;
+    top: 1140px;
+
+    font-family: 'Aoboshi One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 87px;
+
+    color: #344E41;
+}
+
+#search-results-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
